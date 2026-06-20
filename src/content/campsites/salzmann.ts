@@ -1,12 +1,17 @@
 import type { CampsiteConfig } from "../types";
 
+/**
+ * Campingplatz Rohrspitz Salzmann — Fußach am Bodensee (Rheindelta, Vorarlberg).
+ * 100 % aus der eigenen Quelle (raw/digest) abgeleitet. Bilder provenienzgebunden,
+ * je einmal verwendet. Durchgehend Du-Anrede. Original-Palette, heroVariant "center".
+ */
 const IMG = "/campsites/salzmann";
 
 const salzmann: CampsiteConfig = {
   name: "Campingplatz Rohrspitz Salzmann",
   shortName: "Rohrspitz",
   slug: "salzmann",
-  ort: "Fußach am Bodensee",
+  ort: "Fußach",
   region: "Vorarlberg",
   brandKind: "Camping am Bodensee",
   see: "Bodensee",
@@ -14,49 +19,49 @@ const salzmann: CampsiteConfig = {
 
   heroVariant: "center",
 
-  claim: "Urlaub mit der Natur am Bodensee",
-  claimEmphasis: "mit der Natur",
-  emailDetail: "euer hauseigener Badestrand am Bodensee",
+  claim: "Campen, wo das Rheindelta auf den Bodensee trifft",
+  claimEmphasis: "auf den Bodensee",
+  emailDetail: "eure Lage am Rohrspitz mitten im Naturschutzgebiet Rheindelta",
   intro:
-    "Vom 1. April bis 15. Oktober findest du am Rohrspitz parzellierte Stellplätze, einen hauseigenen Badestrand und einen eigenen Hafen — mitten im Naturschutzgebiet Rheindelta direkt am Bodensee.",
+    "Vom 1. April bis 15. Oktober findest du am Rohrspitz parzellierte Stellplätze in vielen Größen, einen hauseigenen Badestrand und die Ruhe des Naturschutzgebiets Rheindelta — direkt am Bodensee.",
 
   statement: {
-    text: "Hier liegt dein Stellplatz mitten im Naturschutzgebiet Rheindelta — und der Bodensee beginnt gleich nebenan.",
-    emphasis: "mitten im Naturschutzgebiet Rheindelta",
+    text: "Hier campst du am Herzen des Naturschutzgebiets Rheindelta — umgeben von 2000 Hektar Schilf, Auwald und Bodensee.",
+    emphasis: "2000 Hektar",
   },
 
   pillars: [
     {
+      title: "Direkt am Seedamm",
+      text: "Parzellierte Plätze direkt hinterm Seedamm — der Bodensee und die Berge stets im Blick.",
+      image: { src: `${IMG}/gallery-42587ec105.webp`, alt: "Campingplatz Rohrspitz am Seedamm mit Blick über den Bodensee" },
+    },
+    {
       title: "Hauseigener Badestrand",
-      text: "Der hauseigene Badestrand liegt direkt am Bodensee — Kiesstrand, Seeluft und viel Platz zum Baden.",
-      image: { src: `${IMG}/activity-dc9fd8444b.webp`, alt: "Hauseigener Badestrand am Bodensee beim Rohrspitz" },
+      text: "Der hauseigene, renaturierte Badestrand am Bodensee liegt nur wenige Schritte vom Platz entfernt.",
+      image: { src: `${IMG}/activity-dc9fd8444b.webp`, alt: "Renaturierter Badestrand am Bodensee beim Camping Rohrspitz" },
     },
     {
-      title: "Mitten im Rheindelta",
-      text: "Mitten im Naturschutzgebiet Rheindelta — 2000 Hektar Schilf, Auwald und seltene Wasservögel.",
-      image: { src: `${IMG}/gallery-d901e1b2cb.webp`, alt: "Schwanenfamilie auf der Wiese im Naturschutzgebiet Rheindelta" },
-    },
-    {
-      title: "Parzellierte Stellplätze",
-      text: "Parzellierte Stellplätze in vielen Größen, alle mit Stromanschluss und kurzen Wegen zum Wasser.",
-      image: { src: `${IMG}/gallery-773211aa11.webp`, alt: "Luftaufnahme der parzellierten Stellplätze am Rohrspitz" },
+      title: "Mitten in der Natur",
+      text: "Mitten im Naturschutzgebiet Rheindelta — Heimat von über 300 Vogelarten rund um den Platz.",
+      image: { src: `${IMG}/gallery-4adf564edd.webp`, alt: "Wasservögel im Naturschutzgebiet Rheindelta am Rohrspitz" },
     },
   ],
 
   usps: [
+    "Direkt am Bodensee",
     "Hauseigener Badestrand",
     "Stellplätze mit Strom",
-    "Hafen mit 190 Liegeplätzen",
+    "Eigener Yachthafen",
     "Eco-Camping seit 2006",
-    "Hunde willkommen",
-    "Bodensee-Radweg am Platz",
+    "Im Naturschutzgebiet",
   ],
 
   trust: {
-    heading: "Darauf ist am Rohrspitz Verlass",
-    headingEmphasis: "am Rohrspitz",
+    heading: "Naturnah, ruhig, direkt am Wasser",
+    headingEmphasis: "direkt am Wasser",
     intro:
-      "Familie Salzmann führt den Platz im Einklang mit der Natur — mit ausgezeichnetem Umweltmanagement, kurzen Wegen zum Wasser und einem Team, das den Rohrspitz seit Jahrzehnten lebt.",
+      "Seit Jahrzehnten führt Familie Salzmann den Platz am Rohrspitz — sanft im Umgang mit der Natur, ausgezeichnet mit Eco-Camping und mit kurzen Wegen zu Badestrand, Hafen und Restaurant.",
   },
 
   awards: [{ label: "Eco-Camping seit 2006" }],
@@ -64,90 +69,62 @@ const salzmann: CampsiteConfig = {
   saison: { von: "April", bis: "Oktober" },
 
   hero: {
-    aerial: { src: `${IMG}/gallery-42587ec105.webp`, alt: "Luftaufnahme: Campingplatz Rohrspitz am Bodensee" },
-    sunset: { src: `${IMG}/gallery-dbdd0e5aef.webp`, alt: "Sonnenuntergang über dem Bodensee am Rohrspitz" },
+    aerial: { src: `${IMG}/gallery-773211aa11.webp`, alt: "Luftaufnahme: Campingplatz Rohrspitz Salzmann mit Yachthafen am Bodensee" },
   },
 
   breather: {
-    image: { src: `${IMG}/gallery-77992a2890.webp`, alt: "Rohrspitz mit Hafen und Bodensee aus der Luft" },
-    line: "2000 Hektar Naturschutzgebiet — und mittendrin dein Stellplatz.",
+    image: { src: `${IMG}/gallery-d243378d0f.webp`, alt: "Abendlicht über dem Yachthafen am Bodensee" },
+    line: "Abendlicht über dem Bodensee, wenn der Hafen zur Ruhe kommt.",
   },
 
   camping: {
-    heading: "Camping am Naturjuwel Rohrspitz",
+    heading: "Camping am Rohrspitz",
     intro:
-      "Erholsame Tage im Einklang mit der Natur: parzellierte Stellplätze in vielen Größen, ein Badestrand am Bodensee und alles für den entspannten Campingtag.",
+      "Parzellierte Stellplätze mit Strom, ein sicheres Chipkarten-Zutrittssystem und alles für entspannte Tage — vom Badestrand bis zum Restaurant am See.",
     features: [
       {
-        title: "Hafen mit 190 Liegeplätzen",
-        text: "Der Hafen am Rohrspitz beheimatet 190 Boote — von der kleinen Fischergondel bis zum großen Motorboot.",
-        image: { src: `${IMG}/gallery-a0c1898e0e.webp`, alt: "Hafen am Rohrspitz mit Booten am Bodensee" },
+        title: "Parzellierte Stellplätze",
+        text: "Parzellierte Stellplätze in verschiedenen Größen, alle mit eigenem Stromanschluss am See.",
+        image: { src: `${IMG}/gallery-77992a2890.webp`, alt: "Parzellierte Stellplätze am Rohrspitz mit Blick über den Bodensee" },
       },
       {
-        title: "Kiosk SeeYou",
-        text: "Der Kiosk SeeYou mit Sonnenterrasse und Seeblick ist das Herzstück am Rohrspitz — für Snacks und Getränke.",
-        image: { src: `${IMG}/gallery-9dac7985c9.webp`, alt: "Kiosk SeeYou mit Terrasse und Blick auf den Bodensee" },
+        title: "Eigener Yachthafen",
+        text: "Direkt nebenan liegt der hauseigene Hafen am Bodensee — mit Liegeplätzen für Segel- und Motorboote.",
+        image: { src: `${IMG}/gallery-a0c1898e0e.webp`, alt: "Yachthafen am Rohrspitz mit Segel- und Motorbooten" },
       },
       {
         title: "Restaurant SeeYou",
-        text: "Im Restaurant SeeYou direkt am Wasser gibt es Pizza und mediterrane Küche, dazu einen Panoramasaal mit Seeblick.",
+        text: "Im Restaurant SeeYou genießt du Küche und Getränke mit weitem Blick über den Bodensee.",
         image: { src: `${IMG}/gallery-cfdaf37cd4.webp`, alt: "Terrasse des Restaurant SeeYou am Rohrspitz" },
       },
       {
-        title: "Bootshandel & Service",
-        text: "Vom Verkauf bis zur Wartung: rund ums Boot bekommst du am Rohrspitz kompetente Hilfe aus einer Hand.",
-        image: { src: `${IMG}/activity-142aad577c.webp`, alt: "Bootshalle für Verkauf und Service am Rohrspitz" },
+        title: "Kiosk zur Selbstbedienung",
+        text: "Der Selbstbedienungs-Kiosk versorgt dich mit Snacks, Getränken und Kleinigkeiten für den Tag.",
+        image: { src: `${IMG}/gallery-ae6b4d769e.webp`, alt: "Selbstbedienungs-Kiosk SeeYou am Rohrspitz" },
       },
       {
-        title: "Spielplatz am Kiosk",
-        text: "Beim Kiosk SeeYou gibt es einen Spielplatz mit Rutsche — die Kinder spielen, während du auf der Terrasse sitzt.",
-        image: { src: `${IMG}/gallery-ae6b4d769e.webp`, alt: "Spielplatz mit Rutsche beim Kiosk SeeYou" },
+        title: "Schattige Seeterrasse",
+        text: "Auf der schattigen Seeterrasse sitzt du im Grünen, mit dem Bodensee zum Greifen nah.",
+        image: { src: `${IMG}/gallery-9dac7985c9.webp`, alt: "Beschirmte Seeterrasse mit Blick auf den Bodensee" },
       },
       {
-        title: "Sonnenterrasse am See",
-        text: "Auf der blumengeschmückten Terrasse an der Rezeption genießt du den Blick über das Rheindelta zum Bodensee.",
-        image: { src: `${IMG}/gallery-81ae22a908.webp`, alt: "Blumengeschmückte Sonnenterrasse an der Rezeption" },
-      },
-    ],
-  },
-
-  aktivitaeten: {
-    heading: "Rund um den Rohrspitz",
-    intro:
-      "Baden, Boot fahren und Natur beobachten — am Bodensee und im Rheindelta liegt das alles direkt vor deinem Vorzelt.",
-    items: [
-      {
-        title: "Wassersport am Bodensee",
-        text: "Segeln, Motorboot oder einfach Boot fahren — der Bodensee liegt direkt vor dem Hafen am Rohrspitz.",
-        image: { src: `${IMG}/gallery-5fe82d9ec8.webp`, alt: "Boote im Hafen am Bodensee" },
-      },
-      {
-        title: "Vogelparadies Rheindelta",
-        text: "Das Rheindelta ist seit 1995 Natura-2000-Gebiet und ein Paradies für unzählige Wasservögel.",
-        image: { src: `${IMG}/gallery-4adf564edd.webp`, alt: "Wasservögel im Naturschutzgebiet Rheindelta" },
-      },
-      {
-        title: "Natur hautnah erleben",
-        text: "Auwälder, Schilfflächen und Feuchtwiesen rund um den Platz laden zum Beobachten und Staunen ein.",
-        image: { src: `${IMG}/gallery-38c3b3136f.webp`, alt: "Libelle auf einem Schilfhalm am Rohrspitz" },
+        title: "Bootsplätze & Wassersport",
+        text: "Ob Segeln, Motorboot oder einfach am Wasser sein — der Bodensee beginnt direkt am Platz.",
+        image: { src: `${IMG}/gallery-20ced0468d.webp`, alt: "Boot am Steg im Hafen des Rohrspitz am Bodensee" },
       },
     ],
   },
 
   anreise: {
-    heading: "Dein Weg an den Rohrspitz",
+    heading: "Anreise zum Rohrspitz",
     modes: [
       {
         title: "Mit dem Auto",
-        text: "Die Zufahrt erfolgt ausschließlich über Höchst — der Beschilderung „Rohrspitz“ bis an den See und zum Parkplatz Salzmann folgen (Navi führt manchmal falsch über Fußach).",
+        text: "Die Zufahrt ist nur über Höchst möglich — ab dem Kreisverkehr der Beschilderung „Rohrspitz“ bis an den See folgen.",
       },
       {
         title: "Aus der Schweiz",
-        text: "Grenzübertritt bei St. Margrethen oder bei Rheineck / Gaißau, dann der Ausschilderung „Rohrspitz“ bis an den See folgen.",
-      },
-      {
-        title: "Mit Bahn & Bus",
-        text: "Öffentlich nicht direkt erreichbar — nächste Haltestellen sind Fußach Alte Post sowie Höchst Hecht.",
+        text: "Über die Grenzübergänge St. Margrethen oder Rheineck/Gaißau und dann der Beschilderung „Rohrspitz“ folgen.",
       },
       {
         title: "Mit dem Rad",
@@ -157,36 +134,35 @@ const salzmann: CampsiteConfig = {
   },
 
   galerie: {
-    heading: "Sommer am Rohrspitz",
+    heading: "Bilder vom Rohrspitz",
     headingEmphasis: "Rohrspitz",
-    intro: "Hafen, Strand und lange Sommerabende am Bodensee — ein paar Eindrücke vom Rohrspitz.",
+    intro: "Schilf, Wasser und weiter Himmel — ein paar Eindrücke aus dem Naturschutzgebiet rund um den Platz.",
     tag: "April bis Oktober",
     moreCount: 16,
     images: [
-      { src: `${IMG}/gallery-d243378d0f.webp`, alt: "Abendstimmung am Hafen des Rohrspitz" },
-      { src: `${IMG}/gallery-2983d5d729.webp`, alt: "Luftaufnahme des Rohrspitz mit Hafen und Badestrand am Bodensee" },
-      { src: `${IMG}/gallery-5d12f37704.webp`, alt: "Boote im Abendlicht auf dem Bodensee" },
-      { src: `${IMG}/gallery-303200ddfc.webp`, alt: "Bootshandel am Rohrspitz" },
+      { src: `${IMG}/gallery-efc9d62c69.webp`, alt: "Libelle im Naturschutzgebiet Rheindelta am Rohrspitz" },
+      { src: `${IMG}/gallery-d58c782a9e.webp`, alt: "Bemooster Baumstamm im Auwald am Rohrspitz" },
+      { src: `${IMG}/activity-819940c37c.webp`, alt: "Strandgut am Bodenseeufer beim Rohrspitz" },
+      { src: `${IMG}/gallery-e514a62993.webp`, alt: "Abendstimmung am Hafen mit Blick über den Bodensee" },
     ],
   },
 
   booking: {
-    heading: "Sichere dir deinen Platz am Rohrspitz",
-    headingEmphasis: "am Rohrspitz",
-    intro:
-      "Reservierung ist schon ab einer Nacht möglich — wähle Zeitraum und Stellplatzgröße, die Campingrezeption bestätigt dir deine Verfügbarkeit.",
+    heading: "Sichere dir deinen Stellplatz",
+    headingEmphasis: "deinen Stellplatz",
+    intro: "Wähle Zeitraum und Stellplatz-Kategorie — Familie Salzmann bestätigt dir deine Verfügbarkeit am Rohrspitz.",
     pricesArePlaceholder: false,
     priceNote:
-      "ab-Preise je Stellplatz/Nacht (Preisliste 2026) · zzgl. € 9 pro Erw., € 5,50 pro Kind & € 2,60 Gästetaxe, Strom € 5/Tag · bitte aktuell bestätigen",
+      "Stellplatzpreise pro Nacht laut Preisliste — zzgl. € 9 je Erwachsene(r), € 5,50 je Kind (2–14 J.), Auto € 6,10, Strom € 5 und Ortstaxe € 2,60 pro Person. Bitte bei der Buchung bestätigen.",
     highlight: {
       title: "10 % ab 7 Nächten",
-      text: "Bei längeren Aufenthalten gibt es ab der siebten Nacht 10 % Ermäßigung.",
+      text: "Bei längeren Aufenthalten erhältst du ab der siebten Nacht 10 % Ermäßigung.",
     },
     categories: [
-      { id: "zelt", label: "Zeltplatz (kleines Zelt)", perNight: 13.4, perExtraGuest: 9 },
-      { id: "standard", label: "Standard-Stellplatz", perNight: 22.2, perExtraGuest: 9 },
-      { id: "deluxe", label: "Deluxe (Wohnwagen / Wohnmobil)", perNight: 27.8, perExtraGuest: 9 },
-      { id: "superdeluxe", label: "Familienplatz ab 90 m²", perNight: 39.5, perExtraGuest: 9 },
+      { id: "spartarif", label: "Kleines Zelt (Spartarif)", perNight: 16.1, perExtraGuest: 9 },
+      { id: "standard", label: "Standard – Hauszelt / kleines Wohnmobil", perNight: 22.2, perExtraGuest: 9 },
+      { id: "deluxe", label: "Deluxe – Wohnwagen / Wohnmobil", perNight: 27.8, perExtraGuest: 9 },
+      { id: "superdeluxe", label: "Super Deluxe – Familienplatz ab 90 m²", perNight: 39.5, perExtraGuest: 9 },
     ],
   },
 
@@ -202,24 +178,15 @@ const salzmann: CampsiteConfig = {
   languages: ["DE", "EN"],
 
   nav: [
-    {
-      label: "Camping",
-      href: "#camping",
-      children: [
-        { label: "Stellplätze", href: "#camping" },
-        { label: "Hafen & SeeYou", href: "#camping" },
-      ],
-    },
-    { label: "Aktiv", href: "#aktivitaeten" },
+    { label: "Camping", href: "#camping", children: [
+      { label: "Stellplätze", href: "#camping" },
+      { label: "Hafen & Gastronomie", href: "#camping" },
+    ]},
     { label: "Galerie", href: "#galerie" },
-    {
-      label: "Preise & Lage",
-      href: "#booking",
-      children: [
-        { label: "Preise", href: "#booking" },
-        { label: "Anreise", href: "#anreise" },
-      ],
-    },
+    { label: "Preise & Anreise", href: "#booking", children: [
+      { label: "Preise", href: "#booking" },
+      { label: "Anreise", href: "#anreise" },
+    ]},
   ],
 };
 
